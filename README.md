@@ -1,6 +1,6 @@
-# CGV
+# Community-Enhanced Graph Visualization Using Triangulation
 
-삼각 분할을 이용한 군집 강조 그래프 시각화 (Community-Enhanced Graph Visualization Using Triangulation)
+삼각 분할을 이용한 군집 강조 그래프 시각화
 
 *   참여 인원: 정수환, 박종민, 임성수 (충남대학교 [데이터인텔리전스 연구실](https://www.cnudi.com/))
 *   관련 논문: [그래프 클러스터링을 위한 삼각 분할 기반 임베딩](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09301897), [KSC 2019](https://www.kiise.or.kr/conference/main/index.do?CC=KSC&CS=2019)
