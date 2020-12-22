@@ -1,14 +1,15 @@
 # CGV
 
-삼각 분할을 이용한 군집 강조 그래프 시각화(Community-Enhanced Graph Visualization Using Triangulation)
+삼각 분할을 이용한 군집 강조 그래프 시각화 (Community-Enhanced Graph Visualization Using Triangulation)
 
 *   참여 인원: 정수환, 박종민, 임성수 (충남대학교 [데이터인텔리전스 연구실](https://www.cnudi.com/))
 *   관련 논문: [그래프 클러스터링을 위한 삼각 분할 기반 임베딩](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09301897), [KSC 2019](https://www.kiise.or.kr/conference/main/index.do?CC=KSC&CS=2019)
 *   연구 지원: 충남대학교 [바이오AI융합연구센터](https://bioai.cnu.ac.kr/*bioairc*/index.do)
 *   코드 문의: 정수환 integerhwan@gmail.com
 
+<br>
 
-# 프로그램 목표
+# 목표
 
 본 프로그램은 주어진 그래프 데이터에 대해 군집 구조를 강조하여 표현해주는 그래프 시각화를 수행하는 것을 목표로 한다. 이를 위해 Python 3로 작성되었고 networkx, fa2l, matplotlib, scipy, numpy 패키지를 활용하여 소스코드를 작성하였다. 인터랙티브한 결과 도출을 위해 파이썬 노트북으로 작성한 코드로 배포하고자 한다
 
@@ -16,8 +17,9 @@
 
 그래프 시각화를 통해 주어진 그래프에 대한 단순화된 표현을 찾는 동시에 삼각 분할을 통해 그래프를 대표하는 삼각형 구조들을 찾는다. 이들의 장점을 취하여 주어진 그래프로 부터 삼각형들로 이루어진 희소 그래프 구조를 찾고, 각 삼각형의 강도는 주어진 그래프의 연결 유사도에 의해 정의되는 변환을 수행한다. 최종적으로 얻어지는 그래프 시각화는 군집 구조를 알아보기 쉽다는 특징을 가져서 유용하다.
 
+<br>
 
-# 프로그램 기능
+# 기능
 
 1. 프로그램 실행을 위한 준비 과정
 프로그램 실행을 위하여 파이썬에서 활용 가능한 패키지를 설치 및 사용할 수 있다: networkx, fa2l, matplotlib, scipy, numpy. 이 중 networkx는 그래프 데이터를 입력, 저장, 분석하는데 필요한 패키지이며, fa2l은 기초 그래프 시각화를 위해 필요한 ForceAtlas2 실행을 위해 필요하다. 후자의 세 패키지는 파이썬 데이터 분석을 위해 사용하는 주요 패키지들로, 데이터의 표현 및 연산, 시각화 등에 있어서 다양한 기능을 제공한다. 오픈-소스 프로그래밍 언어 및 패키지의 다양한 기능을 활용하였다. 자세한 기능은 하단의 2~5에서 설명한다.
